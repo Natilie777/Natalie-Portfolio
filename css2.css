@@ -1,0 +1,170 @@
+:root {
+    --text-myself: #074079;
+    --text-about: #042a50;
+    --text-buttons: #8417eb;
+    --text-li: #333;
+    --text-label: #042a50;
+    --text-send-btn: white;
+    --text-footer-link-hover: #ffffff;
+    --bg-header: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    --bg-my-skills: linear-gradient(135deg, #ffffff 0%, #f3f7ff 100%);
+    --bg-button: linear-gradient(135deg, #82a6ca 0%, #c291f0 100%);
+
+    --bg-footer: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    --bg-li-hover: #E0C3FC;
+    --send-btn-hover: (135deg, #4799eb 0%, #b065f7 100%);
+}
+
+.dark {
+    --text-myself: #e0e0e0;
+    --text-about: #ccc;
+    --text-buttons: #ffccff;
+    --text-li: #eee;
+    --text-label: #ccc;
+    --text-send-btn: #fff;
+    --text-footer-link-hover: #ffd700;
+    --bg-header: #1a1a1a;
+    --bg-my-skills: #222;
+    --bg-button: #333;
+    --bg-footer: #111;
+    --bg-li-hover: #444;
+    --send-btn-hover: linear-gradient(135deg, #5555ff, #aa55ff);
+}
+
+* {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: space-evenly;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-header);
+    padding: .5em;
+}
+
+
+
+.myself {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: .5em 1.5em;
+    color: var(--text-myself);
+
+}
+
+.about {
+    margin: auto;
+    padding-bottom: 1em;
+    font-size: 1.2rem;
+    color: var(--text-about);
+
+
+}
+
+.navigation {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 47%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+
+}
+
+.link {
+
+    line-height: 1.4;
+    margin-bottom: 1em;
+    font-size: .7rem;
+    text-align: center;
+    color: var(--text-myself);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.my-work,
+.contact-me,
+.burger {
+    border-radius: .5rem;
+    font-size: 1rem;
+    border: rgb(151, 161, 216) solid 1px;
+    padding: .5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+
+}
+
+.projects-href {
+    margin-top: 2rem;
+}
+
+.my-work a,
+.contact-me a,
+.burger {
+    color: var(--text-buttons);
+}
+
+.my-work:hover,
+.contact-me:hover {
+    transform: scale(1.1);
+}
+
+.my-work,
+.contact-me {
+    transition: .3s ease;
+}
+
+.projects-href,
+.contact {
+    text-decoration: none;
+}
+
+
+
+
+/* nav
+
+.dark {
+    --text-myself: #e0e0e0;
+    --text-about: #ccc;
+    --text-buttons: #ffccff;
+    --text-li: #eee;
+    --text-label: #ccc;
+    --text-send-btn: #fff;
+    --text-footer-link-hover: #ffd700;
+    --bg-header: #1a1a1a;
+    --bg-my-skills: #222;
+    --bg-button: #333;
+    --bg-footer: #111;
+    --bg-li-hover: #444;
+    --send-btn-hover: linear-gradient(135deg, #5555ff, #aa55ff);
+}

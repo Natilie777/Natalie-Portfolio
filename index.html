@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Natalia portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="theme-toggle">🌙</button>
+        <h1 class="myself">Hi, I'm Natalia</h1>
+        <p class="about">I'm creating simple, modern, responsive web sites.</p>
+
+        <div class="buttons">
+          <div class="button my-work">
+            <a class="projects-href" href="#">My projects</a>
+          </div>
+          <div class="button contact-me">
+            <a class="contact" href="#">Contact me</a>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <button class="burger">☰</button>
+          <nav class="menu hidden">
+            <a href="#" class="link">About me</a>
+            <a href="#" class="link">Skills / What I Do</a>
+            <a href="#" class="link">My social media</a>
+          </nav>
+        </div>
+      </header>
+      <div class="the-content">
+        <aside class="what-do">
+          <h2>Skills / What I Do</h2>
+          <ul>
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">Figma to Web</li>
+            <li class="skill">Responsive layout</li>
+            <li class="skill">Basic JS interactivity</li>
+          </ul>
+        </aside>
+        <main>
+          <section class="about-me">
+            <h2>About me</h2>
+            <ul>
+              <li>I’m Natalia, a junior frontend developer.</li>
+              <li>
+                I create modern, adaptive landing pages based on Figma designs.
+              </li>
+              <li>
+                I pay attention to detail, clean code, and user-friendly
+                layouts.
+              </li>
+              <li>Currently learning advanced JavaScript and React.</li>
+              <li>English B2, open for international collaboration.</li>
+            </ul>
+          </section>
+          <section class="container-projects">
+            <h2>My projects</h2>
+            <div class="projects">
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project1" />
+              </div>
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project2" />
+              </div>
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project3" />
+              </div>
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project4" />
+              </div>
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project5" />
+              </div>
+              <div class="single-project">
+                <img src="./images/R.jpeg" alt="project6" />
+              </div>
+            </div>
+          </section>
+          <section class="contact-form">
+            <h2>Contact me</h2>
+            <form class="form" action="" method="POST">
+              <div class="input-group">
+                <label for="name">Your name</label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input-group">
+                <label for="email">Your email</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input-group">
+                <label for="message">Message</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+                <span class="error"></span>
+              </div>
+              <button type="submit" class="send-btn">
+                <span class="btn-text">Send message</span>
+              </button>
+              <p class="form-sent">The data was sent successfully</p>
+            </form>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <p class="footer-text">@ <span id="year"></span>Natalia Frontend</p>
+        <div class="footer-links">
+          <a href="#" class="my-links">Github</a
+          ><a href="#" class="my-links">LinkedIn</a
+          ><a href="#" class="my-links">Email</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
